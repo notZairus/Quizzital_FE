@@ -69,7 +69,7 @@ export default function Login() {
   async function signIn(e) {
     e.preventDefault();
 
-    let res = await fetch('http://127.0.0.1:5000/login', {
+    let res = await fetch(backendUrl('/login'), {
       method: 'POST',
       headers: {
         'Content-type': 'application/json'
