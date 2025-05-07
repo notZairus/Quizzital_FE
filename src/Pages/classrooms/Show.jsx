@@ -107,6 +107,12 @@ export default function ClassroomShow() {
 
         console.log(`time now: ${timeNow.getTime()}`)
         console.log(`open time: ${openTime.getTime()}`)
+
+
+        console.log(`Client time now: ${new Date().toString()}`);
+        console.log(`Client time now (UTC): ${new Date().toUTCString()}`);
+        console.log(`Open time: ${openTime.toString()}`);
+        console.log(`Open time (UTC): ${openTime.toUTCString()}`);
         Swal.fire({
           icon: 'info',
           title: 'Quiz Not Yet Started',
