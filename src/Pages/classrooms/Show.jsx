@@ -10,6 +10,10 @@ import Toast from "../../Components/Toast.js";
 import Button from '../../Components/Button.jsx';
 import plus_icon from '../../assets/icons/plus-svgrepo-com.svg'
 import dayjs from 'dayjs';
+import customParseFormat from 'dayjs/plugin/customParseFormat';
+
+dayjs.extend(customParseFormat);
+
 
 const ActivityPanel = lazy(() => import('../../Components/ActivityPanel.jsx'));
 
