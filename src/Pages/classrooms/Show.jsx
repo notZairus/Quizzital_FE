@@ -104,6 +104,9 @@ export default function ClassroomShow() {
       let closeTime = currentActivity.close_at ? new Date(currentActivity.close_at) : null;
 
       if (timeNow.getTime() < openTime.getTime()) {
+
+        console.log(`time now: ${timeNow.getTime()}`)
+        console.log(`open time: ${openTime.getTime()}`)
         Swal.fire({
           icon: 'info',
           title: 'Quiz Not Yet Started',
