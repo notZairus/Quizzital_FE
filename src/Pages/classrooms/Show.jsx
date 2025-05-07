@@ -109,15 +109,6 @@ export default function ClassroomShow() {
       let closeTime = currentActivity.close_at ? new Date(currentActivity.close_at) : null;
 
       if (timeNow.getTime() < openTime.getTime()) {
-
-        console.log(`time now: ${timeNow.getTime()}`)
-        console.log(`open time: ${openTime.getTime()}`)
-
-
-        console.log(`Client time now: ${new Date().toString()}`);
-        console.log(`Client time now (UTC): ${new Date().toUTCString()}`);
-        console.log(`Open time: ${openTime.toString()}`);
-        console.log(`Open time (UTC): ${openTime.toUTCString()}`);
         Swal.fire({
           icon: 'info',
           title: 'Quiz Not Yet Started',
