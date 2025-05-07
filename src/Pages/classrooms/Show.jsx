@@ -9,6 +9,7 @@ import { backendUrl, formatSeconds } from "../../js/functions.js";
 import Toast from "../../Components/Toast.js";
 import Button from '../../Components/Button.jsx';
 import plus_icon from '../../assets/icons/plus-svgrepo-com.svg'
+import dayjs from 'dayjs';
 
 const ActivityPanel = lazy(() => import('../../Components/ActivityPanel.jsx'));
 
