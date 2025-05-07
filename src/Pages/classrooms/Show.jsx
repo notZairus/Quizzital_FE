@@ -100,7 +100,7 @@ export default function ClassroomShow() {
       }
 
       let timeNow = new Date();
-      let openTime = new Date(currentActivity.open_at);
+      const openTime = dayjs(currentActivity.open_at, 'DD/MM/YYYY, HH:mm:ss').toDate();
       let closeTime = currentActivity.close_at ? new Date(currentActivity.close_at) : null;
 
       if (timeNow.getTime() < openTime.getTime()) {
